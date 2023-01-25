@@ -31,10 +31,6 @@ on:
         description: 'makefile name'
         required: true
         default: 'twrp_wayne'
-      MAKEWHAT:
-        description: 'make what'
-        required: true
-        default: 'recovery'
         
 jobs:
   Build:
@@ -98,7 +94,7 @@ jobs:
         cd ${GITHUB_WORKSPACE}/workspace
         . build/envsetup.sh
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng
-        mka ${{ github.event.inputs.MAKEWHAT }}image -j2
+        mka recoveryimage -j2
 
     - name: Generate info
       run: |
