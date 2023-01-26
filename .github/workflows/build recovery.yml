@@ -10,27 +10,27 @@ on:
       MANIFEST_BRANCH:
         description: 'branch'
         required: true
-        default: 'twrp-12.1'
+        default: 'twrp-9.0'
       DEVICE_TREE:
         description: 'device tree'
         required: true
-        default: 'https://github.com/xiaoleGun/android_device_xiaomi_wayne-twrp'
+        default: 'https://github.com/TeamWin/android_device_xiaomi_cereus'
       DEVICE_TREE_BRANCH:
         description: 'branch'
         required: true
-        default: 'android-12.1'
+        default: 'android-9.0'
       DEVICE_PATH:
         description: 'device path'
         required: true
-        default: 'device/xiaomi/wayne'
+        default: 'device/xiaomi/cereus'
       DEVICE_NAME:
         description: 'device codename'
         required: true
-        default: 'wayne'
+        default: 'cereus'
       MAKEFILE_NAME:
         description: 'makefile name'
         required: true
-        default: 'twrp_wayne'
+        default: 'twrp_cereus'
         
 jobs:
   Build:
