@@ -102,4 +102,4 @@ jobs:
         name: ${{ env.RECOVERYISWHAT }}_${{ github.event.inputs.DEVICE_NAME }}_${{ env.BUILD_TIME }}
         tag: ${{ github.event.inputs.DEVICE_NAME }}_${{ env.BUILD_TIME }}
         bodyFile: workspace/info.txt
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
