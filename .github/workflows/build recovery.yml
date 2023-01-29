@@ -52,6 +52,9 @@ jobs:
     - name: Check Out
       uses: actions/checkout@main
 
+    - name: Cleanup
+      uses: rokibhasansagar/slimhub_actions@main
+
     - name: Prepare Environment
       run: |
         export HOME=${GITHUB_WORKSPACE}
