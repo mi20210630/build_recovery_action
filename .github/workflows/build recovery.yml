@@ -6,11 +6,11 @@ on:
       MANIFEST:
         description: 'manifest'
         required: true
-        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git'
       MANIFEST_BRANCH:
         description: 'branch'
         required: true
-        default: 'twrp-9.0'
+        default: 'twrp-12.1'
       DEVICE_TREE:
         description: 'device tree'
         required: true
